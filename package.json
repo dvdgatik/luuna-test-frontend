@@ -1,0 +1,22 @@
+{
+  "name": "luuna-test-frontend",
+  "version": "1.0.0",
+  "description": "A Frontend Technical Test to apply in Luuna",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React.js",
+    "Hooks",
+    "Bootstrap4",
+    "Mobile",
+    "First",
+    "HTML",
+    "CSS",
+    "JS",
+    "JSX"
+  ],
+  "author": "David Gatica",
+  "license": "ISC"
+}
