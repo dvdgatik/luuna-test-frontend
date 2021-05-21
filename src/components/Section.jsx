@@ -1,18 +1,21 @@
 import React from 'react';
-import styled  from 'styled-components';
+import styled from 'styled-components';
+
+
+const StyledSection = styled.section`
+	padding-top:10px;
+`;
 
 const Section = props =>  {
 	return (
 		<>
-		<section className={props.className}>
+		<StyledSection className={props.className}>
 		{props.children}
-		</section>
+		</StyledSection>
 		</>
 	);
 }
 
 
-const styledSection =  styled(Section)`    
-	padding-top:10px
-`;
-export default styledSection;
+
+export default Section;

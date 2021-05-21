@@ -5,7 +5,7 @@ function Home(props) {
 	return (
 		<>
 			<Header/>
-			<section className='section-calculator row container-fluid'>
+			<section className='row container-fluid'>
 			{props.children}
 			</section>
 			<Footer/>

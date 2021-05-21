@@ -1,5 +1,5 @@
 import React from 'react'
-//import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
  
@@ -17,18 +17,16 @@ const Span = styled.span`
 	display:block;
 `;
 
-const Anchor = styled.a`
+const Anchor = styled(Link)`
 	display:inline-block;
 	color: #ffffff;
 	padding: 0 10px;
-	font-size: 13pt;
+	font-size: ${props=>props.fontSize || '13pt' };
 	text-decoration: none;
 	font-weight: bold;
 	&:hover ${Anchor} {
     	color:#ffffff;
-  	}
-
-
+  	};
 `;  
 
 
@@ -46,14 +44,14 @@ const Header = props => {
 				</span>
 			</nav>
 		</header>*/
-		<StyleHeader className="navbar-brand mb-0 h1">
+		<StyleHeader>
 			<Nav className="navbar">
-				<Span>
-					<Anchor src='/'>Luuna</Anchor>
+				<Span className="navbar-brand mb-0 mr-0 h1">
+					<Anchor fontSize='24pt' to='/'>Luuna</Anchor>
 				</Span>
 				<Span>
-					<Anchor  src='/users'>Users</Anchor>
-					<Anchor  src='/repositories'>Repositories</Anchor>
+					<Anchor  to='/users'>Users</Anchor>
+					<Anchor  to='/repositories'>Repositories</Anchor>
 				</Span>
 			</Nav>
 		</StyleHeader>
