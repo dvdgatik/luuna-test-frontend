@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
- 
 const StyleHeader = styled.header`
 	background: #002355;
 	text-align: center;
@@ -29,21 +28,8 @@ const Anchor = styled(Link)`
   	};
 `;  
 
-
-
 const Header = props => {
 	return(
-		/*<header>
-			<nav className="navbar">
-				<span className="navbar-brand mb-0 h1">
-				<a className='cool-link' src="/">Disease Classifier</a>
-				</span>
-				<span>See individual: 
-				<a className='cool-link' src="/hypertension">Hypertension</a>
-				<a className='cool-link' src="/kydney" >Kidney Desease</a>
-				</span>
-			</nav>
-		</header>*/
 		<StyleHeader>
 			<Nav className="navbar">
 				<Span className="navbar-brand mb-0 mr-0 h1">
@@ -57,11 +43,6 @@ const Header = props => {
 		</StyleHeader>
 	);
 }
-
-
-
-
-
 
 export default Header;
 
