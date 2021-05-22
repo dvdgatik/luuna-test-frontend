@@ -14,8 +14,13 @@ const Button = styled.button`
 const StyledSection = styled(Section)`
 	/*background: blue;*/
 	padding: 20px;
-	width: 30%;
+	width: 100%;
     margin: 50px auto;
+
+   @media (min-width: 968px) {
+    width: 30%;
+  }
+
 `;
 
 

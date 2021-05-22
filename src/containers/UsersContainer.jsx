@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Users from '../components/Users';
 import getData from '../utils/getData.js';
 import Search from '../components/Search';
+import Title from '../components/Title';
 const API = 'https://api.github.com/users';
 
 const UsersContainer = props => {
@@ -53,6 +54,7 @@ const UsersContainer = props => {
 
 	return(
 		<>
+		<Title title={'Users'}/>
 		<Search  handleClick={handleClick} handleSearch={handleSearch} name_input={'Users...'}/>
 		<Users notfound={notfound} users={users}/>
 		</>

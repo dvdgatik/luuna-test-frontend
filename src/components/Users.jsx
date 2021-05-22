@@ -35,7 +35,6 @@ const Users = props => {
       <DivCard key={key} className="card">
         <div className="card-body ">
           <h5 className="card-title"><strong>Username: </strong> <a href={value.html_url}>{value.login}</a></h5>
-          <p className="card-text">Followers</p>
           <p className="card-text text-center">
           <Img className="card-img-top" src={value.avatar_url} alt="Card image cap"/>
           </p>

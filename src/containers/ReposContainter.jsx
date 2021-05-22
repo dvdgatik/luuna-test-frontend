@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Repos from '../components/Repos';
 import getData from '../utils/getData.js';
 import Search from '../components/Search';
+import Title  from '../components/Title';
 const API = 'https://api.github.com/search/repositories?q=page:1';
 const ReposContainer = props => {
 	const [repos, setRepos] =  useState([]);
@@ -60,6 +61,7 @@ const ReposContainer = props => {
 	}, []);
 	return(
 		<>
+		<Title title={'Repositories'}/>
 		<Search handleClick={handleClick} handleSearch={handleSearch} name_input={'Repos...'}/>
 		<Repos notfound={notfound} repos={repos}/>
 		</>
