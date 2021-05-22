@@ -26,6 +26,8 @@ getData('https://api.github.com/rate_limit')
 	response => {
 		console.log(response.data);
 	}
-)
+).catch(function(e) {
+  console.log(e); // "oh, no!"
+});
 
 export default getData;

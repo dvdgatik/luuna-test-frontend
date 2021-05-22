@@ -10,6 +10,10 @@ import Users from './containers/UsersContainer';
 import Repos from './containers/ReposContainter';
 import App from './components/App';
 import NotFound from './components/NotFound';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faSearch, faGithub } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faCheckSquare, faSearch);
 let root = document.querySelector('#root');
 
 render(
