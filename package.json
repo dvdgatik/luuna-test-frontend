@@ -23,6 +23,8 @@
   "author": "David Gatica",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hooks": "^1.0.1"
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",

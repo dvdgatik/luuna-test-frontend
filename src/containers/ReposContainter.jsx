@@ -8,7 +8,7 @@ const ReposContainer = props => {
 	useEffect(()=> {
 		getData(API)
 		.then(response => {
-			setRepos(response);
+			setRepos(response.data);
 		});
 
 		//console.log(repos);

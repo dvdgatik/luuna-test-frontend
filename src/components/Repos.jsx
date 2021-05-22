@@ -22,35 +22,37 @@ const Img  = styled.img`
 `;
 
 const Repos = props => {
-	return(
-<div class="card-group">
-		{
+ 
+
+
+return(
+
+<div className="card-group">
+    {
+
       props.repos.map((value, key)=>(
-
-      
-  <DivCard key={key} className="card">
-    {/*<img class="card-img-top" src="..." alt="Card image cap"/>**/}
-    <div className="card-body ">
-      <h5 className="card-title"><strong>Repo: </strong> <a href={value.html_url}>{value.name}</a></h5>
-      <PDesc className="card-text">{value.description}</PDesc>
-      <p className="card-text text-center">
-      <Img className="card-img-top" src={value.owner.avatar_url} alt="Card image cap"/>
-       <strong>Owner:</strong> <a href="">{value.owner.login}</a>
-      </p>
-    </div>
-    <div className="card-footer">
-      <small className="text-muted"><strong>
-      <a href={value.owner.html_url}>{value.owner.html_url}</a>
-      </strong></small>
-    </div>
-  </DivCard>
-
-    ))
-
+      <DivCard key={key} className="card">
+        {/*<img class="card-img-top" src="..." alt="Card image cap"/>**/}
+        <div className="card-body ">
+          <h5 className="card-title"><strong>Repo: </strong> <a href={value.html_url}>{value.name}</a></h5>
+          <PDesc className="card-text">{value.description}</PDesc>
+          <p className="card-text text-center">
+          <Img className="card-img-top" src={value.owner.avatar_url} alt="Card image cap"/>
+           <strong>Owner:</strong> <a href="">{value.owner.login}</a>
+          </p>
+        </div>
+        <div className="card-footer">
+          <small className="text-muted"><strong>
+          <a href={value.owner.html_url}>{value.owner.html_url}</a>
+          </strong></small>
+        </div>
+      </DivCard>
+        ))
     }
-    </div>
+  </div>
 
-	)
+  )
+	
 }
 
 export default Repos;

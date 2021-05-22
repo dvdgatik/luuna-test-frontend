@@ -1,16 +1,31 @@
-let headers = new Headers({
-	"Accept"       : "application/json",
-    "Content-Type" : "application/json",
-    "User-Agent"   : "dvdgatik"
-});
-const getData = api => {
-	return fetch(api, {
-		method: 'GET',
-		headers: headers
-	})
+import React from 'react';
+import axios from 'axios';
+
+// With Fetch
+/*const getData = api => {
+	return fetch(api)
 	.then(response => response.json())
-	.then(response => response)
+	.then(response =>response)
 	.catch(error => error);
+}*/
+
+//With Axios
+// Create a token from github
+const token = process.env.TOKEN;
+const getData = api => {
+	return axios.get(api, {
+	 headers: {
+      'Authorization': 'Bearer ' + token
+    }
+	});
 }
+
+// Verify that the rate limit be 5000, not 60 with help of the token
+getData('https://api.github.com/rate_limit')
+.then(
+	response => {
+		console.log(response.data);
+	}
+)
 
 export default getData;
