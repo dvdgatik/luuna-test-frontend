@@ -4,13 +4,13 @@
   "description": "A Frontend Technical Test to apply in Luuna",
   "main": "index.js",
   "engines": {
-  "node": "12.22.1",
-  "npm": "7.10.0"
+    "node": "12.22.1",
+    "npm": "7.10.0"
   },
   "scripts": {
     "dev": "webpack serve --mode development",
     "start": "node server.js",
-    "build": "webpack --mode production",
+    "heroku-postbuild": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -27,8 +27,6 @@
   "author": "David Gatica",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "dotenv-webpack": "^7.0.2",
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -47,6 +45,8 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^5.2.5",
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.2",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
