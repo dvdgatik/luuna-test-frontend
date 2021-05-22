@@ -1,4 +1,4 @@
-<h1 align="center">Disease Classifier Auxita</h1>
+<h1 align="center">Luuna Test Frontend</h1>
 <p align="center">
   <a href="https://www.npmjs.com/" target="_blank"><img src="https://img.shields.io/badge/Packages-NPM-%23CB3837.svg?logo=npm&link=https://www.npmjs.com"></a>
   <a href="https://webpack.js.org/" target="_blank"><img src="https://img.shields.io/badge/Bundler-Webpack-%238DD6F9.svg?logo=Webpack"></a>
