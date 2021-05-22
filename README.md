@@ -10,10 +10,10 @@
 
 ## Description
 
-React application bootstrapped with [Webpack](https://github.com/facebookincubator/create-react-app) for using with `REST API` and React itself for state managing.
+React application bootstrapped with [Webpack](https://webpack.js.org/) for using with `REST API` and React itself for state managing.
 
 
-Luna Test Frontend
+Luuna Test Frontend
 
 ## Install and Configure
 
