@@ -59,7 +59,9 @@ module.exports = {
 			filename: 'assets/[name].css'
 		}),
 		new webpack.DefinePlugin({
-      		"process.env": {},
+      		"process.env": {
+      			'TOKEN': JSON.stringify(process.env.TOKEN)
+      		},
     	}),
 	]	
 };
