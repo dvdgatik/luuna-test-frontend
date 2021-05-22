@@ -21,12 +21,19 @@ const Img  = styled.img`
   margin-bottom:20px;
 `;
 
+const H3 = styled.h3`
+  text-align:center;
+  color:#F71111;
+`;
+
+
 const Repos = props => {
  
-
+//console.log(props.repos.items);
 
 return(
-
+<>
+<H3>{props.notfound}</H3>
 <div className="card-group">
     {
 
@@ -50,6 +57,7 @@ return(
         ))
     }
   </div>
+  </>
 
   )
 	

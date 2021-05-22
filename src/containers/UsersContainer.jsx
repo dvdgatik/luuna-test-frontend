@@ -11,19 +11,19 @@ const UsersContainer = props => {
 	const handleSearch = event => {
 		event.persist();
 		setUserInput(event.target.value);
-		console.log(userinput);
+		//console.log(userinput);
 	}
 	const handleClick = () => {
 		getData(API+'/'+userinput)
 		.then(res => {
-			console.log([res.data]);
+			//console.log([res.data]);
 			setUsers([res.data]);
 			setNotFound('');
-			console.log(users);
+			//console.log(users);
 		})
 		.catch(err => {
 			setNotFound('User Not Found');
-			console.log(notfound);
+			//console.log(notfound);
 		});
 	}
 	useEffect(()=>{
