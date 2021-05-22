@@ -11,20 +11,27 @@ const ReposContainer = props => {
 	const handleSearch = event => {
 		event.persist();
 		setRepoInput(event.target.value);
-		console.log(repoinput);
+		//console.log(repoinput);
 	}
 	const handleClick = () => {
 		if(repoinput != '') {
 			getData(API+'&q='+repoinput)
 		.then(res => {
-			console.log(res.data.items);
-			setRepos(res.data.items);
-			setNotFound('');
-			console.log(repos);
+			//console.log(res.data.total_count);
+			if(res.data.total_count === 0){
+				//console.log('Es cero');
+				setNotFound('Repo Not Found');
+			} else {
+				setRepos(res.data.items);
+				console.log('Hecho');
+				setNotFound('');
+			}
+			//console.log(repos);
 		})
 		.catch(err => {
 			setNotFound('Repo Not Found');
-			console.log(notfound);
+			//console.log(notfound);
+			//console.log(err);
 		});
 		}
 		
@@ -38,16 +45,19 @@ const ReposContainer = props => {
 			setRepos(response.data.items);
 			}
 		})
-		.catch(err=>err);
+		.catch(err=>{
+			//console.log('Limite de peticiones al API de github agotado, rate limit');
+			//console.log(err);
+			return err
+		});
 
 		return () => {
       		// clean up
       		isMounted = false;
     	};
 
-		//console.log(repos);
 
-	}, [repoinput]);
+	}, []);
 	return(
 		<>
 		<Search handleClick={handleClick} handleSearch={handleSearch} name_input={'Repos...'}/>

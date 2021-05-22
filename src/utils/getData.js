@@ -15,7 +15,7 @@ const token = process.env.TOKEN;
 const getData = api => {
 	return axios.get(api, {
 	 headers: {
-      'Authorization': 'Bearer ' + token
+      'Authorization': 'Bearer ' + token,
     }
 	});
 }
