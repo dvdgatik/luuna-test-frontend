@@ -13,11 +13,12 @@ import axios from 'axios';
 // Create a token from github
 const token = process.env.TOKEN;
 const getData = api => {
-	return axios.get(api, {
-	 headers: {
-      'Authorization': 'Bearer ' + token,
-    }
-	});
+		const request = axios.get(api, {
+		headers: {
+		'Authorization': 'Bearer ' + token,
+		}
+		});
+		return request;
 }
 
 // Verify that the rate limit be 5000, not 60 with help of the token

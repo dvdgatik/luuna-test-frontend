@@ -16,17 +16,28 @@ const UsersContainer = props => {
 	}
 	const handleClick = (e) => {
 		event.preventDefault();
-		getData(API+'/'+userinput)
-		.then(res => {
-			//console.log([res.data]);
-			setUsers([res.data]);
-			setNotFound('');
-			//console.log(users);
-		})
-		.catch(err => {
-			setNotFound('User Not Found');
-			//console.log(notfound);
-		});
+		if (userinput != '') {
+			getData(API+'/'+userinput)
+			.then(res => {
+				if (res.status == 200) {
+					setUsers([res.data]);
+					setNotFound('');
+					console.clear();
+				}
+				//console.log([res.data]);
+				//console.log(users)
+			})
+			.catch((err) => {
+				
+				if (err.response.status === 404) {
+					console.clear();
+					console.log(err.response.status);
+					setNotFound('User Not Found');
+					console.log("%cUser  not  found", "color:#ffff; background:#002355; font-size: 16pt");
+				}
+				
+			});
+		}
 	}
 	useEffect(()=>{
 		let isMounted = true;
