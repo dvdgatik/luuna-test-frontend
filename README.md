@@ -74,7 +74,7 @@ TypeScript
 
 ## React 
 
-We splitting components to two parts - _Container_ and _Component_.
+I splitting components to two parts - _Container_ and _Component_.
 
 **`Container`** file concentrates in itself all logic and HOCs of this feature.
 
