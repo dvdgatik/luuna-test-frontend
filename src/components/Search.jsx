@@ -8,7 +8,9 @@ const Input = styled.input`
     	
   	};
 `;
-const Button = styled.button`
+const Button = styled.button.attrs({
+	type:'submit',
+})`
 	background:#002355;
 `;
 const StyledSection = styled(Section)`
