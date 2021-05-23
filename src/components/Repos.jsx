@@ -45,7 +45,7 @@ return(
           <PDesc className="card-text">{value.description}</PDesc>
           <p className="card-text text-center">
           <Img className="card-img-top" src={value.owner.avatar_url} alt="Card image cap"/>
-           <strong>Owner:</strong> <a href="">{value.owner.login}</a>
+           <strong>Owner:</strong> <a href={value.owner.html_url}>{value.owner.login}</a>
           </p>
         </div>
         <div className="card-footer">
