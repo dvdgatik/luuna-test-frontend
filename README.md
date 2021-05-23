@@ -20,7 +20,7 @@ Luuna Test Frontend
 ### Install Dependencies
 ``` npm install``` or ```npm i``` 
 ### Start Project
-``` npm start ``` 
+``` npm run dev ``` 
 ### Run Tests
 ``` npm run test ``` or ``` npm run test:watch ```
 
@@ -60,7 +60,7 @@ Redux Reducers
 ``` Independent Components ```,
 
 
-### Interface Segregation Principl
+### Interface Segregation Principle
 
 PropTypes,
 ``` Props ```,
