@@ -20,9 +20,9 @@ render(
 	<BrowserRouter>
 		<Home>
 			<Switch>
-				<Route  path='/users' component={Users} />
-				<Route  path='/repositories' component={Repos}/>
-				<Route path='/' component={App} />
+				<Route  exact path='/users' component={Users} />
+				<Route  exact path='/repositories' component={Repos}/>
+				<Route exact path='/' component={App} />
 				<Route component={NotFound}/>
 			</Switch>
 		</Home>

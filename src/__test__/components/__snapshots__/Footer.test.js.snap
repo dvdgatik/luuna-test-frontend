@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Snapshot Check UI of Footer Component 1`] = `
+.c0 {
+  background: #002355;
+  padding: 20px;
+  color: #ffffff;
+}
+
+<footer
+  className="c0"
+>
+  <p
+    className="footer-title"
+  >
+    Created by David Gatica | 2021
+  </p>
+</footer>
+`;

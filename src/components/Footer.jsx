@@ -12,9 +12,6 @@ const Paragraph = styled.p`
 
 const  Footer = props => {
 	return(
-	 	/*<footer>
-			<p className='footer-title'>Created by David Gatica | 2021</p>
-		</footer>*/
 		<StyledFooter>
 			<Paragraph className='footer-title'>Created by David Gatica | 2021</Paragraph>
 		</StyledFooter>

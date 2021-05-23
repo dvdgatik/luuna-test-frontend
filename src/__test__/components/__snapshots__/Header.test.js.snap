@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot Check UI of Header Component 1`] = `
+.c0 {
+  background: #002355;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.c1 {
+  display: block;
+}
+
+.c2 {
+  display: inline-block;
+  color: #ffffff;
+  padding: 0 10px;
+  font-size: 24pt;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.c2:hover {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: 5px auto;
+  background: #fff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.c2:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.c3 {
+  display: inline-block;
+  color: #ffffff;
+  padding: 0 10px;
+  font-size: 13pt;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.c3:hover {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: 5px auto;
+  background: #fff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.c3:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+<header
+  className="c0"
+>
+  <nav
+    className="navbar"
+  >
+    <span
+      className="c1 navbar-brand mb-0 mr-0 h1"
+    >
+      <a
+        className="c2"
+        fontSize="24pt"
+        href="/"
+        onClick={[Function]}
+      >
+        Luuna
+      </a>
+    </span>
+    <span
+      className="c1"
+    >
+      <a
+        className="c3"
+        href="/users"
+        onClick={[Function]}
+      >
+        Users
+      </a>
+      <a
+        className="c3"
+        href="/repositories"
+        onClick={[Function]}
+      >
+        Repositories
+      </a>
+    </span>
+  </nav>
+</header>
+`;
