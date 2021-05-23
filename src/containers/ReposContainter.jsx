@@ -14,7 +14,8 @@ const ReposContainer = props => {
 		setRepoInput(event.target.value);
 		//console.log(repoinput);
 	}
-	const handleClick = () => {
+	const handleClick = (event) => {
+		event.preventDefault();
 		if(repoinput != '') {
 			getData(API+'&q='+repoinput)
 		.then(res => {

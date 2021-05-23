@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users Snapshot Check UI of Users Component 1`] = `
+Array [
+  <h3
+    className="sc-dlnjwi ikjnRt"
+  />,
+  <div
+    className="card-group"
+  />,
+]
+`;

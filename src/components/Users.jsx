@@ -31,7 +31,7 @@ const Users = props => {
 		<div className="card-group">
     {
 
-      props.users.map((value, key)=>(
+      props.users?.map((value, key)=>(
       <DivCard key={key} className="card">
         <div className="card-body ">
           <h5 className="card-title"><strong>Username: </strong> <a href={value.html_url}>{value.login}</a></h5>

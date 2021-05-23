@@ -14,7 +14,8 @@ const UsersContainer = props => {
 		setUserInput(event.target.value);
 		//console.log(userinput);
 	}
-	const handleClick = () => {
+	const handleClick = (e) => {
+		event.preventDefault();
 		getData(API+'/'+userinput)
 		.then(res => {
 			//console.log([res.data]);

@@ -37,7 +37,7 @@ return(
 <div className="card-group">
     {
 
-      props.repos.map((value, key)=>(
+      props.repos?.map((value, key)=>(
       <DivCard key={key} className="card">
         {/*<img class="card-img-top" src="..." alt="Card image cap"/>**/}
         <div className="card-body ">

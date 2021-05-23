@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repos Snapshot Check UI of Repos Component 1`] = `
+Array [
+  <h3
+    className="sc-hKFxyN gJOnQp"
+  />,
+  <div
+    className="card-group"
+  />,
+]
+`;

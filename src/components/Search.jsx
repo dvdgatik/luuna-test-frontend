@@ -30,14 +30,16 @@ const Search = props => {
 
 	return(
 	<StyledSection>
+	<form  onSubmit={(event)=>handleClick(event)}>
 		<div className="input-group">
 	    <Input  onChange={(event)=> handleSearch(event)} type="text" className="form-control" placeholder={`Search ${props.name_input}`}/>
 	    <div className="input-group-append">
-	      <Button onClick={()=>handleClick()} className="btn btn-secondary" type="button">
+	      <Button  className="btn btn-secondary" type="button">
 	         <FontAwesomeIcon icon="search" />
 	      </Button>
 	    </div>
 	  </div>
+	  </form>
 	</StyledSection>
 	);
 }
